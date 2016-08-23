@@ -90,7 +90,6 @@ public class BuilderGeneratorProcessor extends BaseProcessor {
                 if (values.length() > 0) {
                     values.append(", ");
                 }
-                String type = ve.asType().toString();
                 Item item = ve.getAnnotation(Item.class);
                 if (item == null) {
                     values.append(getDefaultValue(ve));
