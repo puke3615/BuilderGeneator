@@ -1,7 +1,5 @@
 package com.puke.buildergenerator.compiler;
 
-import java.util.Set;
-
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.Messager;
