@@ -20,11 +20,11 @@ android {
     }
 }
 
-//repositories {
+repositories {
 //    maven {
 //        url 'https://dl.bintray.com/puke3615/puke'
 //    }
-//}
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -32,6 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile project(':buildergenerator-api')
     apt project(':buildergenerator-compiler')
-//    compile 'com.puke:buildergenerator-api:1.0.0'
-//    apt 'com.puke:buildergenerator-compiler:1.0.0'
+//    compile 'com.puke:buildergenerator-api:1.0.1'
+//    compile 'com.puke:buildergenerator-compiler:1.0.1'
 }

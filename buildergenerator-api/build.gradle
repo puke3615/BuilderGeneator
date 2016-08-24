@@ -16,7 +16,7 @@ dependencies {
 }
 
 group = 'com.puke'
-version = '1.0.0'
+version = '1.0.1'
 
 //uploadArchives {
 //    repositories {
@@ -83,10 +83,10 @@ install {
     }
 }
 
-//task sourcesJar(type: Jar) {
-//    from sourceSets.main.java.srcDirs
-//    classifier = 'sources'
-//}
+task sourcesJar(type: Jar) {
+    from sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
 
 //task javadoc(type: Javadoc) {
 //    source = sourceSets.main.java.srcDirs
@@ -98,7 +98,7 @@ install {
 //    from javadoc.destinationDir
 //}
 //
-//artifacts {
+artifacts {
 //    archives javadocJar
-//    archives sourcesJar
-//}
+    archives sourcesJar
+}
